@@ -17,6 +17,6 @@ app.use(cors());
 app.use(express.json());
 app.use(require('./routes'));
 
-server.listen(3003, () => {
-    console.log('Servidor iniciado na porta 3003');
+const listener = server.listen(process.env.PORT || 3003, () => {
+    console.log('Servidor iniciado com sucesso na porta ' + listener.address().port + '.');
 });
