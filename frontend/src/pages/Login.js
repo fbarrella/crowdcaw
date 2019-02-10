@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import ccLogo from '../twitter.svg';
+import ccLogo from '../crowdcaw.svg';
 import './Login.css';
 
 export default class Login extends Component {
@@ -29,7 +29,8 @@ export default class Login extends Component {
     render() {
         return (
             <div className="login-wrapper">
-                <img src={ccLogo} alt="CrowdCaw" />
+                <img src={ccLogo} width={100} alt="CrowdCaw" />
+                <h2>crowdcaw</h2>
 
                 <form onSubmit={this.handleSubmit}>
                     <input 

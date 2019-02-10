@@ -19,17 +19,22 @@
 .tweet button {
   border: 0;
   background: transparent;
-
   display: flex;
   align-items: center;
   color: #697882;
   cursor: pointer;
+  transition: 0.2s;
 }
 
-.tweet button img {
+.tweet button svg {
   margin-right: 5px;
 }
 
 .tweet button:hover {
   opacity: 0.7;
+  color: firebrick;
+}
+
+.tweet button:hover svg g {
+  fill: firebrick;
 }
